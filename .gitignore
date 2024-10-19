@@ -13,4 +13,5 @@ config.yaml
 plugins/*
 maubot.db
 maubot.db-wal
+maubot.db-shm
 ubottu/config.yaml

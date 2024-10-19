@@ -68,11 +68,9 @@ server:
 # into the box there.
 homeservers:
     ubuntu.com:
-        # Client-server API URL
         url: https://chat-server.ubuntu.com
-        # registration_shared_secret from synapse config
-        # You can leave this empty if you don't have access to the homeserver.
-        # When this is empty, `mbc auth --register` won't work, but `mbc auth` (login) will.
+    matrix.org:
+        url: https://matrix.org
         secret:
 admins:
     admin: $2b$12$4WfTjyBaQWegispHwmmsIOwAnHf95dCzqpi32Zfl/5/7KYh3/8ntW
