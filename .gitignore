@@ -10,7 +10,7 @@ olm
 *.db
 *.log
 config.yaml
-plugins/*
+plugins/*.mbp
 maubot.db
 maubot.db-wal
 maubot.db-shm
