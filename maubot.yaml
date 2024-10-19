@@ -1,0 +1,7 @@
+maubot: 0.1.0
+id: dev.summit.workshopbot
+version: 1.0.0
+license: MIT
+modules:
+  - workshopbot
+main_class: WorkshopBot

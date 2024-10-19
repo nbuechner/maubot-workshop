@@ -1,0 +1,1 @@
+from .workshopbot import WorkshopBot

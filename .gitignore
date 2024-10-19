@@ -1,0 +1,17 @@
+env
+olm
+.local
+.cmake
+.cache
+.bashrc
+.python_history
+.bash_history
+*.mbp
+*.db
+*.log
+config.yaml
+config.yaml.*
+plugins/*
+maubot.db
+maubot.db-wal
+ubottu/config.yaml
