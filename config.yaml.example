@@ -60,7 +60,7 @@ server:
     override_resource_path: false
     # The shared secret to sign API access tokens.
     # Set to "generate" to generate and save a new token at startup.
-    unshared_secret: xorpksjwycct8o3o4hvvio8zk8t35a5lbugn2193bctvt19jmtbw1iv4qom5gqev
+    unshared_secret: generate
 
 # Known homeservers. This is required for the `mbc auth` command and also allows
 # more convenient access from the management UI. This is not required to create
@@ -73,7 +73,7 @@ homeservers:
         url: https://matrix.org
         secret:
 admins:
-    admin: $2b$12$4WfTjyBaQWegispHwmmsIOwAnHf95dCzqpi32Zfl/5/7KYh3/8ntW
+    admin: admin
 api_features:
     login: true
     plugin: true
