@@ -1,6 +1,7 @@
 from maubot import Plugin, MessageEvent
 from maubot.handlers import command
 import requests
+import urllib.parse
 
 class WorkshopBot(Plugin):
   @command.new(name="welcome") 
@@ -43,7 +44,7 @@ class WorkshopBot(Plugin):
         "feels_like_c": weather_data.get("current_condition", [{}])[0].get("FeelsLikeC", "N/A"),
         "weather_desc": weather_data.get("current_condition", [{}])[0].get("weatherDesc", [{}])[0].get("value", "N/A"),
     }
-  
-    output = f"The [weather](https://wttr.in/{city_info['city']}) in {city_info['city']}, {city_info['region']}, {city_info['country']} is {weather_summary}"
+    city_url = urllib.parse.quote(city_info['city'])
+    output = f"The [weather](https://wttr.in/{city_url}) in {city_info['city']}, {city_info['region']}, {city_info['country']} is {weather_summary}"
     await evt.reply(output.strip())
     
