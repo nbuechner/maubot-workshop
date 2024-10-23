@@ -117,15 +117,15 @@ mbc build -u
 
 ## Configuring your bot
 
-![Your interface should look like this](.attachments.615512/image.png)
+![Your interface should look like this](https://github.com/nbuechner/maubot-workshop/raw/refs/heads/main/images/att1.png)
 
 #### Adding a plugin instance
 
-![Add instance](.attachments.615512/image%20%282%29.png)
+![Add instance](https://github.com/nbuechner/maubot-workshop/raw/refs/heads/main/images/att2.png)
 
 You can choose any ID. The user and type of the plugin we want to run in this instance are already selected. Click "Create"
 
-![If you did everything right it should look like this](.attachments.615512/image%20%283%29.png)
+![If you did everything right it should look like this](https://github.com/nbuechner/maubot-workshop/raw/refs/heads/main/images/att3.png)
 
 ## Invite your new bot into the workshop room
 
