@@ -26,7 +26,10 @@ class WorkshopBot(Plugin):
 
     json_url = f"https://wttr.in/{city}?format=j1"
     response_json = requests.get(json_url)
-    if response_json.status_code != 200:
+    try:
+      if response_json.status_code != 200:
+        return
+    except:
       return
     
     weather_data = response_json.json()
