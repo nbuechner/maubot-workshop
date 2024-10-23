@@ -16,7 +16,7 @@ class WorkshopBot(Plugin):
       await evt.reply(greeting)
 
   @command.new(name="weather", aliases=["wttr"], must_consume_args=True, help="Please provide a city name. Example: !weather London")
-  @command.argument(name="city", pass_raw=True, required=False)
+  @command.argument(name="city", pass_raw=True, required=True)
   async def weather_command(self, evt: MessageEvent, city: str) -> None:
     city = city.strip()
 
