@@ -4,8 +4,8 @@ import requests
 import urllib.parse
 
 class WorkshopBot(Plugin):
-  @command.new(name="welcome") 
-  async def hello_world(self, evt: MessageEvent) -> None:
+  @command.new(name="welcome")
+  async def welcome(self, evt: MessageEvent) -> None:
     await evt.reply("Welcome to the Matrix Workshop!")
 
   @command.new(name="hello")
